@@ -58,7 +58,7 @@ class Calculator {
     getDisplayNumber(number) {
         let stringNumber = number.toString();
         let integerDigits = parseFloat(stringNumber.split('.')[0]);
-        let decimalDigits = stringNumber.split('.'[1])
+        let decimalDigits = stringNumber.split('.')[1]
         let integerDisplay; 
         if (isNaN(integerDigits)){
             integerDisplay = ''
