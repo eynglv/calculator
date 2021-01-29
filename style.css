@@ -1,0 +1,99 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.container-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba (255, 255, 255, .75);
+}
+
+.container-grid > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.span-two{
+    grid-column: span 2;
+}
+
+.output{
+    grid-column: 1/-1;
+    background-color: rgba(148, 163, 147, .85);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word; 
+    word-break: break-all;
+}
+
+.output .previous-operand{
+    color: rgba(15, 11, 10, 0.5);
+    font-size: 1.5rem;
+}
+
+.output .current-operand{
+    font-size: 2.5rem;
+}
+
+
+html {
+  height: 100%;
+  /* max-height: 600px; */
+  width: 1000px;
+  background-color: hsla(200,40%,30%,.4);
+  background-image:   
+    url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
+    url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
+    url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+    url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
+    url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+  background-repeat: repeat-x;
+  background-position: 
+    0 20%,
+    0 100%,
+    0 50%,
+    0 100%,
+    0 0;
+  background-size: 
+    2500px,
+    800px,
+    500px 200px,
+    1000px,
+    400px 260px;
+  animation: 50s para infinite linear;
+  }
+
+@keyframes para {
+  100% {
+    background-position: 
+      -5000px 20%,
+      -800px 95%,
+      500px 50%,
+      1000px 100%,
+      400px 0;
+    }
+  }
+
+
+
+Resources1× 0.5× 0.25×Rerun
